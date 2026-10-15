@@ -1,0 +1,332 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #30252b;
+    background: #fffafc;
+    line-height: 1.6;
+}
+a {
+    text-decoration: none;
+}
+h2, h3 {
+    font-family: Georgia, serif;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 7%;
+    background: white;
+    box-shadow: 0 3px 18px #4a15300d;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.brand strong {
+    color: #c63d78;
+}
+
+.brand-mark {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #c63d78;
+    color: white;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a, footer a {
+    color: #49323e;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover, footer a:hover {
+    color: #c63d78;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 65px 9%;
+    background: linear-gradient(115deg, #fff0f6, #fffafc, #fbe4ee);
+}
+
+.hero-copy {
+    flex: 1;
+}
+
+.eyebrow {
+    color: #c63d78;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    margin: 15px 0;
+    font: clamp(38px, 5vw, 65px)/1.1 Georgia, serif;
+}
+
+.hero h1 em {
+    color: #c63d78;
+}
+
+.hero-copy p {
+    color: #715e68;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: white;
+    background: #c63d78;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #9e285b;
+    transform: translateY(-3px);
+}
+
+.lipstick {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    width: 30px;
+    height: 120px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #8d234d, #d44a7e);
+    transform: rotate(18deg);
+}
+.sparkle {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+}
+.s1 { top: 10%; right: 20%; }
+.s2 { bottom: 10%; left: 20%; }
+.section-wrap {
+    padding: 60px 8%;
+}
+.intro {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+.intro h2, .section-wrap h2 {
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+.intro p {
+    color: #715e68;
+}
+.products {
+    background: white;
+    text-align: center;
+}
+.product-grid {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+.product-card {
+    flex: 1;
+    min-width: 0;
+    padding: 15px;
+    border: 1px solid #f2dce6;
+    border-radius: 17px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px #8d34501c;
+}
+
+.product-art {
+    display: grid;
+    place-items: center;
+    height: 120px;
+    border-radius: 12px;
+    color: white;
+    font-size: 45px;
+}
+
+.lips { background-image: url(imagenes/labiales.jpg);width: 100%;height: 200px; background-size: cover;}
+.eyes { background-image: url(imagenes/sombras\ de\ ojos.jpg); width: 100%; height: 200px;background-size: cover; }
+.blush { background-image: url(imagenes/rubores.jpg); width: 100%; height: 200px; background-size: cover;}
+.mascara { background-image:url(imagenes/mascara\ de\ pestañas\ ..jpg); width: 1005; height: 200px; background-size: cover;  }
+
+.product-card h3 {
+    margin: 12px 0 5px;
+}
+
+.product-card p {
+    margin-bottom: 10px;
+    color: #715e68;
+    font-size: 14px;
+}
+
+.product-card a {
+    color: #c63d78;
+    font-weight: bold;
+}
+
+.tips {
+    display: flex;
+    gap: 30px;
+    background: #fff0f6;
+}
+
+.tip-copy, .media-box {
+    flex: 1;
+}
+
+.tip-copy p {
+    margin-top: 10px;
+    color: #715e68;
+}
+.media-box {
+    padding: 22px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 8px 20px #8d345010;
+}
+.media-box p {
+    margin: 10px 0;
+    color: #715e68;
+    font-size: 14px;
+}
+.media-box audio {
+    width: 100%;
+}
+.video-frame {
+    aspect-ratio: 16 / 9;
+}
+
+.video-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    margin-top: 10px;
+    color: #715e68;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 8%;
+    background: #30252b;
+    color: white;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 7%;
+    }
+
+    .hero-art {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .section-wrap {
+        padding: 40px 6%;
+    }
+
+    .product-grid, .tips {
+        flex-direction: column;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-art {
+        height: 200px;
+    }
+
+    .circle {
+        width: 140px;
+        height: 140px;
+    }
+
+    .compact {
+        width: 95px;
+        height: 95px;
+    }
+
+    .intro h2, .section-wrap h2 {
+        font-size: 27px;
+    }
+}
